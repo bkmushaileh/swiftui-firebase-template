@@ -1,7 +1,11 @@
 <div dir="rtl">
   
 # قالب Firebase 
-Firebase startup template 
+> Firebase startup template 
+
+<img width="300" alt="Firebase template demo gif" src="https://user-images.githubusercontent.com/8784343/103164888-ecdd9f80-4821-11eb-885c-2b84173d11e9.gif" />
+
+
 
 من خلال هذا القالب يمكنك إنشاء تطبيقات ترتبط بسحابة Firebase بكل سهولة. يمكنك اعادة استعمال بعض الـ Views مثل
 - Sign in 
