@@ -12,10 +12,14 @@ struct AuthenticationView: View {
     var body: some View {
         NavigationView {
             VStack{
-                NavigationLink("Sign in", destination: SignIn())
-                    .modifier(SignInModifier())
-
-                NavigationLink("Create an account", destination: SignUp())
+                NavigationLink(
+                    destination: SignIn(),
+                    label: {Text("Sign in").modifier(SignInModifier())}
+                )
+                NavigationLink(
+                    destination: SignUp(),
+                    label: {Text("Create an account")}
+                )
             }
             .navigationTitle("Home")
         }
