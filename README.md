@@ -148,6 +148,7 @@ struct AddItem: View {
 
 ولا تنسى عند استعمال View ل EnvironmentObject يجب تمرير نسخة من الـ EnvironmentObject من خلال `.environmentObject()` قبل اسم الواجهة
 بنفس هذه الطريقة
+
 <div dir="ltr">
   
   ```swift
@@ -155,5 +156,15 @@ MainView().environmentObject(FirebaseEnv())
   ```
 </div>
 
+والآن من خلال الواجهة الجديدة، لإضافة العنصر الجديد، قم بوضع الأمر بالمكان المناسب لذلك، واستعمل EnvironmentObject لإضافة عنصر من خلال الدالة التي كتبناها قبل قليل
+
+
+<div dir="ltr">
+  
+  ```swift
+itemsEnv.addItem(item: item)
+  ```
+</div>
+  
   
   </div>
