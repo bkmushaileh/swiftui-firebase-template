@@ -79,9 +79,54 @@ struct MainView: View {
 # 2. Database قواعد البيانات
 يمكنك إضافة وحذف أي عنصر تريد إلى قاعدة البيانات في Firebase من خلال استعمال Firestore
 الخطوات كالتالي: 
-1. قم بعمل Model جديد من خلال الذهاب إلى
+1. قم بعمل model جديد من خلال الذهاب إلى مجلد models وإنشاء ملف سويفت فارغ، وكتابة struct بهذا الشكل
 
-
-
+<div dir="ltr">
   
-  </dir>
+```swift
+struct Item: Codable, Hashable{
+    var name: String
+    var price: Double
+}
+```
+</div>
+
+يمكنك تسمية ال struct يأي اسم تشاء، وإضافة أي عدد تريد من أنواع البيانات الرئيسية مثل 
+a. Int
+b. String
+c. Bool
+d. Date
+تأكد من إضافة `:Codable, Hashable` عند تعريف الكلاس، فهذا مايسمح لل struct أن يتم إرساله إلى قواعد البيانات بالانتنرت
+
+
+2. قم بإنشاء envrionmentObject جديد من خلال عملل نسخة من ItemsEnv من داخل مجلد Environments 
+
+يمكنك الاكتفاء بالكود التالي بدلاً من الكود المكتوب بداخل ItemsEnv
+
+
+<div dir="ltr">
+  
+```swift
+class ItemsEnv: ObservableObject{
+    let collectionName = "MyItems" // ضع اسم للمكان الذي سيتم فيه الحفظ في قاعدة البيانات
+    @Published var items: [Item] = [] // هنا تضع العناصر من النوع الذي قمت بإنشائه
+
+    
+    func loadItems(){
+        Networking.getListOf(COLLECTION_NAME: collectionName) { (items: [Item]) in // تقوم هنا بتعديل النوع أيضاً 
+            self.items = items
+        }
+    }
+    
+    func addItem(item: Item){ // لا تنسى تعديل النوع هنا أيضاً
+        Networking.createItem(item, inCollection: collectionName) {
+          // قم بوضع الكود الذي تريد أن يتم عندما يتم إضافة العنصر
+        } fail: { (error) in
+          // قم بوضع الكود الذي تريد أن يتم عندما تفشل عملية إضافة العنصر
+        }
+    }
+```
+</div>
+  
+  
+  </div>
