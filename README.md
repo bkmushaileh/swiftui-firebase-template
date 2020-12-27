@@ -28,6 +28,7 @@
 2. `SignInCredentials` ويحتوي فقط على الإيميل وكلمة المرور. وهو يستعمل عند عمل sign in فقط.
 
 
+### كيف يعمل البرنامج؟ 
 البرنامج يبدأ من خلال صفحة `MainApp`. حيث يقوم `MainApp` بإعادة بتفعيل `Firebase` ثم تشغيل واجهة `MainView` وإرسال `EnvironmentObject` الخاص ب `Firebase`. بحيث يمكن لكل الواجهات أسفل هذه الواجهات أن تصل إلى دوال ال `EnvironmentObject` المعرف باسم `FirebaseEnv` 
 
 <div dir="ltr">
