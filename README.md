@@ -17,6 +17,15 @@
 <img width="556" alt="Firebase template files structure" src="https://user-images.githubusercontent.com/8784343/103164641-f74a6a00-481e-11eb-99e2-5ba56f45f273.png">
 
 # 1. Authentication التوثيق
+يمكنك التعديل على قالب صفحة تسجيل الدخول وإنشاء حساب جديد من خلال 
+`Views > Authentication`
+
+هناك 2 models مهمان في عملية تسجيل الدخول وعمل حساب جديد 
+
+عند عمل حساب جديد، هناك model باسم `User` و model اسم `SignInCredentials`. 
+1. `User` هو المستعمل عند إنشاء حساب جديد. عادة تضع في الاسم، رقم الهاتف الإيميل، وغيرها من التفاصيل المهمة.  يعتبر وجود الإيميل مهم، ويجب أن لا يحتوي على كلمة المرور. يتم تمرير كلمة المرور في مكان لاحق. يستعمل عند عمل Sign up وعندما تستقبل تفاصيل المستخدم من قاعدة البيانات. 
+يتم حفظ المستخدم عن عمل تسجيل دخول جديد تحت collection في Firebase باسم `users`
+2. `SignInCredentials` ويحتوي فقط على الإيميل وكلمة المرور. وهو يستعمل عند عمل sign in فقط.
 
 
 البرنامج يبدأ من خلال صفحة `MainApp`. حيث يقوم `MainApp` بإعادة بتفعيل `Firebase` ثم تشغيل واجهة `MainView` وإرسال `EnvironmentObject` الخاص ب `Firebase`. بحيث يمكن لكل الواجهات أسفل هذه الواجهات أن تصل إلى دوال ال `EnvironmentObject` المعرف باسم `FirebaseEnv` 
