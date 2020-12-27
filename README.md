@@ -167,4 +167,24 @@ itemsEnv.addItem(item: item)
 </div>
   
   
+4. يمكنك عرض قائمة من العناصر التي تمت إضافتها في قاعدة البيانات عادة من خلال أمر `onAppear`. قم بوضع الـ، modifier `onAppear` على آخر عنصر داخل ال `body` كالتالي: 
+
+<div dir="ltr">
+  
+  ```swift
+.onAppear(perform: itemsEnv.loadItems)
+  ```
+</div>
+
+ولاتنسى أن تقوم بعرض العناصر من خلال `List` مثلاً كالتالي: 
+<div dir="ltr">
+  
+  ```swift
+List(itemsEnv.items, id: \.self){ item in 
+   // ...
+}
+  ```
+</div>
+
+  
   </div>
