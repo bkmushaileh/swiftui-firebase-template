@@ -144,7 +144,16 @@ struct AddItem: View {
   }
 }
 ```
+</div>
 
+ولا تنسى عند استعمال View ل EnvironmentObject يجب تمرير نسخة من الـ EnvironmentObject من خلال `.environmentObject()` قبل اسم الواجهة
+بنفس هذه الطريقة
+<div dir="ltr">
+  
+  ```swift
+MainView().environmentObject(FirebaseEnv())
+  ```
+</div>
 
   
   </div>
