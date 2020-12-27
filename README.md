@@ -125,8 +125,26 @@ class ItemsEnv: ObservableObject{
           // قم بوضع الكود الذي تريد أن يتم عندما تفشل عملية إضافة العنصر
         }
     }
+}
 ```
 </div>
   
+  
+3. قم بإنشاء واجهة لإضافة العنصر الجديد داخل صفحة Views. استعمل الـ EnvironmentObject الذي قمت بإنشائه في ال View الجديد بهذه الطريقة 
+
+
+<div dir="ltr">
+  
+```swift
+struct AddItem: View {
+    @EnvironmentObject var itemsEnv: ItemsEnv // لا تنسى تغيير اسم ال Environment هنا
+///    ... 
+  var body: some View{
+    /// ... 
+  }
+}
+```
+
+
   
   </div>
