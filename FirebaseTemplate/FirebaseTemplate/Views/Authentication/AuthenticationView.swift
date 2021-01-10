@@ -12,16 +12,28 @@ struct AuthenticationView: View {
     var body: some View {
         NavigationView {
             VStack{
+                Spacer()
+                Image("bonfire")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                        .frame(width: 200.0, height: 200.0, alignment: .center)
+                        .clipShape(Rectangle())
+                    
+                    .padding()
                 NavigationLink(
                     destination: SignIn(),
                     label: {Text("Sign in").modifier(SignInModifier())}
                 )
                 NavigationLink(
                     destination: SignUp(),
-                    label: {Text("Create an account")}
+                    label: {Text("Create an account")
+                        .foregroundColor(Color(red: 0.985, green: 0.579, blue: 0.006))
+                        
+                    }
                 )
-            }
-            .navigationTitle("Home")
+                Spacer()
+            }.navigationTitle("You're Almost There")
+            
         }
     }
 }
@@ -32,7 +44,7 @@ struct SignInModifier: ViewModifier{
             .foregroundColor(.white)
             .padding()
             .frame(minWidth: 100, idealWidth: 200, maxWidth: .infinity,  alignment: .center)
-            .background(Color.blue)
+            .background(Color(red: 0.977, green: 0.833, blue: 0.184))
             .cornerRadius(10)
             .padding(.horizontal)
     }
