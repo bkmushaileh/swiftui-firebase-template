@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>304346583724-am78vu1iu0ss1hi9a06qvcmn880bmmg3.apps.googleusercontent.com</string>
+	<string>424786176961-84fgonjfv44s5ud961dn81ifhqed5fgi.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.304346583724-am78vu1iu0ss1hi9a06qvcmn880bmmg3</string>
+	<string>com.googleusercontent.apps.424786176961-84fgonjfv44s5ud961dn81ifhqed5fgi</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAwbyMUmOwcyaJq3G1htV0vYLdnpPS4SAE</string>
+	<string>AIzaSyBl_j1OSOyRnuAFWvbYCllk8oDQqxSx96s</string>
 	<key>GCM_SENDER_ID</key>
-	<string>304346583724</string>
+	<string>424786176961</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.khatma.com</string>
+	<string>com.bashayer.final</string>
 	<key>PROJECT_ID</key>
-	<string>khatma-3e0cb</string>
+	<string>testt-3dbf1</string>
 	<key>STORAGE_BUCKET</key>
-	<string>khatma-3e0cb.appspot.com</string>
+	<string>testt-3dbf1.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:304346583724:ios:901404680d162d2c124509</string>
+	<string>1:424786176961:ios:2ee5468f3a997b7b3a5d40</string>
 	<key>DATABASE_URL</key>
-	<string>https://khatma-3e0cb.firebaseio.com</string>
+	<string>https://testt-3dbf1.firebaseio.com</string>
 </dict>
 </plist>
