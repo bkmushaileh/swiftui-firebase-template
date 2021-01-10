@@ -24,6 +24,7 @@ struct Home: View {
     let itemsEnvironment = ItemsEnv()
     var body: some View {
         NavigationView {
+            
             Form {
                 Section(footer: Text("you are signed in!") , content: {
                     NavigationLink("Add a new item", destination: AddItem()

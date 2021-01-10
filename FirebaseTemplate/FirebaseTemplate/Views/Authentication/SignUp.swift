@@ -18,9 +18,14 @@ struct SignUp: View {
             TextField("last name", text: $user.lastName).keyboardType(.default)
             TextField("email", text: $user.email).keyboardType(.emailAddress)
             SecureField("password", text: $password)
-            Button("Sign up"){
+       
+            Button(action: {
                 env.signUp(user: user, password: password)
-            }
+            }, label: {
+                Text("Sign up")
+                    .foregroundColor(Color(red: 0.985, green: 0.579, blue: 0.006))
+                
+            })
         }
         .navigationTitle("Sign up")
     }
