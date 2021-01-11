@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7828CD4425AB799E00FFDB50 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7828CD4325AB799E00FFDB50 /* GoogleService-Info.plist */; };
 		7828CD4725AB817600FFDB50 /* MySwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7828CD4625AB817600FFDB50 /* MySwiftUIView.swift */; };
+		788D19BE25AC4C93003835CF /* CampList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788D19BD25AC4C93003835CF /* CampList.swift */; };
+		788D19C125AC595E003835CF /* DetailsSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788D19C025AC595E003835CF /* DetailsSwiftUIView.swift */; };
 		D2C079A2259813E70053EDFD /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079A1259813E70053EDFD /* MainApp.swift */; };
 		D2C079AD259815F30053EDFD /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079AC259815F30053EDFD /* SignIn.swift */; };
 		D2C079B2259816BD0053EDFD /* FirebaseEnv.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C079B1259816BD0053EDFD /* FirebaseEnv.swift */; };
@@ -65,6 +67,8 @@
 /* Begin PBXFileReference section */
 		7828CD4325AB799E00FFDB50 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7828CD4625AB817600FFDB50 /* MySwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftUIView.swift; sourceTree = "<group>"; };
+		788D19BD25AC4C93003835CF /* CampList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampList.swift; sourceTree = "<group>"; };
+		788D19C025AC595E003835CF /* DetailsSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsSwiftUIView.swift; sourceTree = "<group>"; };
 		9377AE6CE82235456148A2D9 /* Pods-FirebaseTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTemplate.release.xcconfig"; path = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		B1FD124CAB9AE9745E818900 /* Pods-FirebaseTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseTemplate.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseTemplate/Pods-FirebaseTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 		D2C079A1259813E70053EDFD /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
@@ -167,6 +171,24 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		788D19BA25AC48C0003835CF /* Final Projects  */ = {
+			isa = PBXGroup;
+			children = (
+				788D19BB25AC48DE003835CF /* Models */,
+				7828CD4625AB817600FFDB50 /* MySwiftUIView.swift */,
+				788D19C025AC595E003835CF /* DetailsSwiftUIView.swift */,
+			);
+			path = "Final Projects ";
+			sourceTree = "<group>";
+		};
+		788D19BB25AC48DE003835CF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				788D19BD25AC4C93003835CF /* CampList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		8378283248B71B8695152817 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,7 +205,7 @@
 				D2C079C625981C260053EDFD /* Home.swift */,
 				D2C079C9259821F40053EDFD /* Item */,
 				D2C079C425981C1A0053EDFD /* Authentication */,
-				7828CD4625AB817600FFDB50 /* MySwiftUIView.swift */,
+				788D19BA25AC48C0003835CF /* Final Projects  */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -461,6 +483,7 @@
 				D2C079BE259819FD0053EDFD /* MainView.swift in Sources */,
 				D2C079D0259822090053EDFD /* ListItems.swift in Sources */,
 				D2C079C725981C260053EDFD /* Home.swift in Sources */,
+				788D19BE25AC4C93003835CF /* CampList.swift in Sources */,
 				D2C2705724662F3F005E16A3 /* Item.swift in Sources */,
 				D2C079D9259843330053EDFD /* OptionalState.swift in Sources */,
 				D2C2704B24662C68005E16A3 /* Optional.swift in Sources */,
@@ -468,6 +491,7 @@
 				D2C2704924662C68005E16A3 /* Codable.swift in Sources */,
 				D2C2704724662C63005E16A3 /* ValidatePassword.swift in Sources */,
 				D2C079B2259816BD0053EDFD /* FirebaseEnv.swift in Sources */,
+				788D19C125AC595E003835CF /* DetailsSwiftUIView.swift in Sources */,
 				D2C079D6259841D10053EDFD /* ItemsEnv.swift in Sources */,
 				D2C2704A24662C68005E16A3 /* Keyboard.swift in Sources */,
 				D2C2704624662C63005E16A3 /* ImageUploader.swift in Sources */,
