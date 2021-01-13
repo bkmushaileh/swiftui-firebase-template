@@ -19,15 +19,23 @@ struct SignIn: View {
             
             TextField("email", text: $userCredentials.email).keyboardType(.emailAddress)
             SecureField("password", text: $userCredentials.password)
-            Button("Sign in"){
+            
+            Button(action: {
                 env.signIn(user: userCredentials) { (uid) in
                     print("Signed in!")
                 } fail: { (error) in
                     alertError = error.debugDescription
-                    alertShown = true 
+                    alertShown = true
                 }
-            }
-            NavigationLink("Don't have an account?", destination: SignIn())
+            }, label: {
+                Text("Sign in")
+                    .foregroundColor(Color(red: 0.985, green: 0.579, blue: 0.006))
+            })
+            
+     
+            
+           
+            NavigationLink("Don't have an account?", destination: SignUp()) .foregroundColor(Color(red: 0.985, green: 0.579, blue: 0.006))
         }
         .navigationTitle("Sign in")
         .alert(isPresented: $alertShown, content: {

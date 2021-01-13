@@ -7,12 +7,22 @@
 //
 
 import SwiftUI
+struct MSignOutButton: View{
+    var env: FirebaseEnv
+    var body: some View{
+        Button("Signout") {
+            env.signOut()
+        }
+        .foregroundColor(.red)
+    }
+}
 
 struct MySwiftUIView: View {
+    @EnvironmentObject var env: FirebaseEnv
     var body: some View {
         NavigationView{
             List{
-                Header()
+            
                 Text("Planning Your Next Vacation")
                     .font(.system(size: 25, weight: .thin, design: .rounded))
                 
@@ -28,6 +38,9 @@ struct MySwiftUIView: View {
                 }
                 
             }
+            .navigationBarTitle("Discover")
+
+         
         }
     }
 }
@@ -35,12 +48,13 @@ struct MySwiftUIView: View {
 struct MySwiftUIView_Previews: PreviewProvider {
     static var previews: some View {
         MySwiftUIView()
+            .environmentObject(FirebaseEnv())
     }
 }
 
 struct Header: View {
     var body: some View {
-        VStack {
+        VStack(){
             HStack(alignment:.center){
                 Text("Discover")
                     .font(.system(size: 44, weight: .bold, design: .rounded))

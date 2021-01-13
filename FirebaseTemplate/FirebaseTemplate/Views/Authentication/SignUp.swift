@@ -18,6 +18,7 @@ struct SignUp: View {
             TextField("last name", text: $user.lastName).keyboardType(.default)
             TextField("email", text: $user.email).keyboardType(.emailAddress)
             SecureField("password", text: $password)
+            TextField("phone number", text: $user.phoneNumber).keyboardType(.default)
        
             Button(action: {
                 env.signUp(user: user, password: password)

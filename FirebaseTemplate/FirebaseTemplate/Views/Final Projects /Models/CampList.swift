@@ -20,3 +20,5 @@ let campLists = [
     CampList(name: "Location")
     
 ]
+
+

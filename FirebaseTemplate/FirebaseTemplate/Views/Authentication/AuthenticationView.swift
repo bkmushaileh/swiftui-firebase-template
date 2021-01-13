@@ -18,8 +18,13 @@ struct AuthenticationView: View {
                     .aspectRatio(contentMode: .fill)
                         .frame(width: 200.0, height: 200.0, alignment: .center)
                         .clipShape(Rectangle())
-                    
-                    .padding()
+                Text("Book Kashta")
+                    .font(.system(size: 15, weight: .bold, design: .rounded))
+                Text("Make Journey Possible Anytime")
+                    .font(.system(size: 15, weight: .thin, design: .rounded))
+
+                Spacer()
+
                 NavigationLink(
                     destination: SignIn(),
                     label: {Text("Sign in").modifier(SignInModifier())}
@@ -32,7 +37,7 @@ struct AuthenticationView: View {
                     }
                 )
                 Spacer()
-            }.navigationTitle("You're Almost There")
+            }
             
         }
     }

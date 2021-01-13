@@ -11,8 +11,23 @@ import SwiftUI
 struct DetailsSwiftUIView: View {
     let campList : CampList
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        if campList.name == "Setup"{
+            SetUpUIView()
+            
+        }
+        else if campList.name == "Essentials"{
+            Text("Hello!")
     }
+        else if campList.name == "Food"{
+            Text("Hello!")
+    }
+        else if campList.name == "Activities"{
+            Text("Hello!")
+    }
+        else if campList.name == "Location"{
+            MapView()
+    }
+}
 }
 
 struct DetailsSwiftUIView_Previews: PreviewProvider {
