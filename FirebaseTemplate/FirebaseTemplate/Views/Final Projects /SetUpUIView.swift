@@ -12,7 +12,7 @@ struct SetUpUIView: View {
     
     var body: some View {
             List{
-                Text("You're almost there!\nPick your favorite setup")
+                Text("You're Almost There!\nPick Your Favorite Setup")
                     .font(.system(size: 20, weight: .thin, design: .rounded))
                 
                 ForEach(setupLists) {

@@ -11,6 +11,12 @@
 		7828CD4725AB817600FFDB50 /* MySwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7828CD4625AB817600FFDB50 /* MySwiftUIView.swift */; };
 		782ACD6325ADC49F00807038 /* AddCustomer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782ACD6225ADC49F00807038 /* AddCustomer.swift */; };
 		782ACD6725AF7C4700807038 /* FatourahUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782ACD6625AF7C4700807038 /* FatourahUIView.swift */; };
+		782ACD7C25AFB38300807038 /* ActivitiesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782ACD7B25AFB38300807038 /* ActivitiesView.swift */; };
+		782ACD7F25AFB3E900807038 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782ACD7E25AFB3E900807038 /* Activity.swift */; };
+		782ACD8225AFB5A700807038 /* ActivityDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782ACD8125AFB5A700807038 /* ActivityDetailsView.swift */; };
+		782ACD8625B10F4100807038 /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782ACD8525B10F4100807038 /* Food.swift */; };
+		782ACD8925B10F8000807038 /* FoodUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782ACD8825B10F8000807038 /* FoodUIView.swift */; };
+		782ACD8C25B1104100807038 /* FoodDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782ACD8B25B1104100807038 /* FoodDetailsView.swift */; };
 		788D19BE25AC4C93003835CF /* CampList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788D19BD25AC4C93003835CF /* CampList.swift */; };
 		788D19C125AC595E003835CF /* DetailsSwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788D19C025AC595E003835CF /* DetailsSwiftUIView.swift */; };
 		788D19C425AC64B7003835CF /* SetUpUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788D19C325AC64B7003835CF /* SetUpUIView.swift */; };
@@ -75,6 +81,12 @@
 		7828CD4625AB817600FFDB50 /* MySwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwiftUIView.swift; sourceTree = "<group>"; };
 		782ACD6225ADC49F00807038 /* AddCustomer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomer.swift; sourceTree = "<group>"; };
 		782ACD6625AF7C4700807038 /* FatourahUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FatourahUIView.swift; sourceTree = "<group>"; };
+		782ACD7B25AFB38300807038 /* ActivitiesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesView.swift; sourceTree = "<group>"; };
+		782ACD7E25AFB3E900807038 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		782ACD8125AFB5A700807038 /* ActivityDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailsView.swift; sourceTree = "<group>"; };
+		782ACD8525B10F4100807038 /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		782ACD8825B10F8000807038 /* FoodUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodUIView.swift; sourceTree = "<group>"; };
+		782ACD8B25B1104100807038 /* FoodDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailsView.swift; sourceTree = "<group>"; };
 		788D19BD25AC4C93003835CF /* CampList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampList.swift; sourceTree = "<group>"; };
 		788D19C025AC595E003835CF /* DetailsSwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsSwiftUIView.swift; sourceTree = "<group>"; };
 		788D19C325AC64B7003835CF /* SetUpUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpUIView.swift; sourceTree = "<group>"; };
@@ -200,6 +212,10 @@
 				788D19C025AC595E003835CF /* DetailsSwiftUIView.swift */,
 				788D19CC25ACC1BB003835CF /* MapView.swift */,
 				788D19C325AC64B7003835CF /* SetUpUIView.swift */,
+				782ACD7B25AFB38300807038 /* ActivitiesView.swift */,
+				782ACD8825B10F8000807038 /* FoodUIView.swift */,
+				782ACD8B25B1104100807038 /* FoodDetailsView.swift */,
+				782ACD8125AFB5A700807038 /* ActivityDetailsView.swift */,
 				788D19C925AC6D3A003835CF /* SetupDetailsView.swift */,
 				782ACD6625AF7C4700807038 /* FatourahUIView.swift */,
 			);
@@ -211,6 +227,8 @@
 			children = (
 				788D19BD25AC4C93003835CF /* CampList.swift */,
 				788D19C625AC6C1A003835CF /* Setup.swift */,
+				782ACD7E25AFB3E900807038 /* Activity.swift */,
+				782ACD8525B10F4100807038 /* Food.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -426,7 +444,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D2C26FCB24662807005E16A3 /* Build configuration list for PBXProject "BookKashta" */;
+			buildConfigurationList = D2C26FCB24662807005E16A3 /* Build configuration list for PBXProject "FirebaseTemplate" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -511,6 +529,8 @@
 				D2C079C725981C260053EDFD /* Home.swift in Sources */,
 				788D19BE25AC4C93003835CF /* CampList.swift in Sources */,
 				788D19CA25AC6D3A003835CF /* SetupDetailsView.swift in Sources */,
+				782ACD8925B10F8000807038 /* FoodUIView.swift in Sources */,
+				782ACD7F25AFB3E900807038 /* Activity.swift in Sources */,
 				788D19C725AC6C1A003835CF /* Setup.swift in Sources */,
 				782ACD6325ADC49F00807038 /* AddCustomer.swift in Sources */,
 				D2C2705724662F3F005E16A3 /* Item.swift in Sources */,
@@ -524,6 +544,9 @@
 				788D19C125AC595E003835CF /* DetailsSwiftUIView.swift in Sources */,
 				D2C079D6259841D10053EDFD /* ItemsEnv.swift in Sources */,
 				D2C2704A24662C68005E16A3 /* Keyboard.swift in Sources */,
+				782ACD8225AFB5A700807038 /* ActivityDetailsView.swift in Sources */,
+				782ACD8625B10F4100807038 /* Food.swift in Sources */,
+				782ACD7C25AFB38300807038 /* ActivitiesView.swift in Sources */,
 				D2C2704624662C63005E16A3 /* ImageUploader.swift in Sources */,
 				7828CD4725AB817600FFDB50 /* MySwiftUIView.swift in Sources */,
 				D2C079CC259822010053EDFD /* AddItem.swift in Sources */,
@@ -531,6 +554,7 @@
 				D2C2705224662C9A005E16A3 /* User.swift in Sources */,
 				D2C079C225981BDE0053EDFD /* AuthenticationView.swift in Sources */,
 				D2C079AD259815F30053EDFD /* SignIn.swift in Sources */,
+				782ACD8C25B1104100807038 /* FoodDetailsView.swift in Sources */,
 				788D19C425AC64B7003835CF /* SetUpUIView.swift in Sources */,
 				D2C2705024662C73005E16A3 /* NetworkingSignUp.swift in Sources */,
 				D2C2704524662C63005E16A3 /* ImageLoader.swift in Sources */,
@@ -738,7 +762,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D2C26FCB24662807005E16A3 /* Build configuration list for PBXProject "BookKashta" */ = {
+		D2C26FCB24662807005E16A3 /* Build configuration list for PBXProject "FirebaseTemplate" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D2C26FE224662809005E16A3 /* Debug */,

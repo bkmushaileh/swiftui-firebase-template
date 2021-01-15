@@ -15,10 +15,12 @@ struct Payment: Codable{
 }
 
 struct FatourahUIView: View {
+    
     let name : String
     let mobile : String
     let hours : Int
     let price : Int
+    @State private var showingAlert = false
     @State private var didClick:Bool = false
     @State private var color : UIColor = UIColor(red: 0.977, green: 0.833, blue: 0.184, alpha: 1)
     @State private var payment : String = "Pay Now"
@@ -45,10 +47,11 @@ struct FatourahUIView: View {
             HStack{
                 Text("Total Price")
                 Spacer()
-                Text(String(price))
+                Text("\(String(price)) KD")
             }.padding()
             Spacer()
             Button(action: {
+                self.showingAlert = true
                 self.didClick = true
                 payment = "Payment Done Successfully"
                 color = UIColor(red: 0.985, green: 0.579, blue: 0.006, alpha: 1)
@@ -70,6 +73,8 @@ struct FatourahUIView: View {
                     .frame(width: 300, height: 50)
                     .background(Color(color))
                     .cornerRadius(15.0)
+        }  .alert(isPresented: $showingAlert) {
+            Alert(title: Text("Important message"), message: Text("Thank You for Being a Great Customer🤍!"), dismissButton: .default(Text("Have a Nice Trip!")))
         }
     }
 }

@@ -15,14 +15,12 @@ struct DetailsSwiftUIView: View {
             SetUpUIView()
             
         }
-        else if campList.name == "Essentials"{
-            Text("Hello!")
-    }
+
         else if campList.name == "Food"{
-            Text("Hello!")
+            FoodUIView()
     }
         else if campList.name == "Activities"{
-            Text("Hello!")
+            ActivitiesView()
     }
         else if campList.name == "Location"{
             MapView()

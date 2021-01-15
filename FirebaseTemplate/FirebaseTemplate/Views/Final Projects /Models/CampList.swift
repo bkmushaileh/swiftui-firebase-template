@@ -14,7 +14,6 @@ struct CampList :Identifiable {
 
 let campLists = [
     CampList(name: "Setup"),
-    CampList(name: "Essentials"),
     CampList(name: "Food"),
     CampList(name: "Activities"),
     CampList(name: "Location")
