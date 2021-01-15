@@ -29,7 +29,12 @@ struct SignIn: View {
                 }
             }, label: {
                 Text("Sign in")
-                    .foregroundColor(Color(red: 0.985, green: 0.579, blue: 0.006))
+                    .foregroundColor(.white)
+                    .padding()
+                    .frame(minWidth: 100, idealWidth: 200, maxWidth: .infinity,  alignment: .center)
+                    .background(Color(red: 0.977, green: 0.833, blue: 0.184))
+                    .cornerRadius(10)
+                    .padding(.horizontal)
             })
             
      

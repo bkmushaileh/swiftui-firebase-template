@@ -63,6 +63,7 @@ struct Header: View {
             }
         }
     }
+
 }
 
 struct CampRowView: View {
